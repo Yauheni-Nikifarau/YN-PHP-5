@@ -24,7 +24,7 @@ $arBlog = [
 ];
 
 $arMenu = [
-    'Home' => "/index.php",
+    'Home' => "/",
     'About' => './about/index.php',
     'Blog' => './blog/index.php',
     'Portfolio' => './portfolio/index.php',
