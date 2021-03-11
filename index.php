@@ -1,10 +1,11 @@
-<?php require_once './pagesData/header.php';?>
+<?php require_once './pagesData/header.php';
+?>
 
         <section class="promo">
             <div class="wrapper">
                 <h2 class="promo-title">creative digital solutions</h2>
                 <p class="promo-text">Proin iaculis purus consequat sem cure.</p>
-                <a href="./portfolio/" class="promo-link">view portfolio</a>
+                <a href="/portfolio/ " class="promo-link">view portfolio</a>
             </div>
         </section>
 
@@ -49,7 +50,7 @@
                     <p class="relax-list-item">Regular updates</p>
                     <p class="relax-list-item">Round the clock support</p>
                 </div>
-                <a href="./portfolio/" class="relax-link">learn more</a>
+                <a href="/portfolio/" class="relax-link">learn more</a>
             </div>
         </section>
 
@@ -78,7 +79,7 @@
                 <p class="project-text">Proin iaculis purus consequat sem cure  digni ssim 
                     donec porttitora entum suscipit  aenean rhoncus posuere 
                     odio in.</p>
-                <a href="./portfolio/" class="project-link">view details</a>
+                <a href="/portfolio/" class="project-link">view details</a>
             </div>
         </section>
 

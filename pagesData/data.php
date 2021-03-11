@@ -1,5 +1,4 @@
 <?php
-
 $arBlog = [
     'post1'=>[
         'title'=>'Made with love in toronto',
@@ -25,10 +24,10 @@ $arBlog = [
 
 $arMenu = [
     'Home' => "/",
-    'About' => './about/index.php',
-    'Blog' => './blog/index.php',
-    'Portfolio' => './portfolio/index.php',
-    'Contacts' => './contacts/index.php'
+    'About' => '/about/index.php',
+    'Blog' => '/blog/index.php',
+    'Portfolio' => '/portfolio/index.php',
+    'Contacts' => '/contacts/index.php'
 ]
 
 ?>

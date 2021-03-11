@@ -1,7 +1,3 @@
-<?php
-$path = (file_exists('./pagesData/data.php') ? './pagesData/data.php' : '../pagesData/data.php');
-require_once $path;
-?>
         <footer class="footer">
             <div class="wrapper">
                 <section class="footer-section">
@@ -13,7 +9,7 @@ require_once $path;
                 <section class="footer-section">
                     <h3 class="footer-section-title">Latests Posts</h3>
                     <?php foreach ($arBlog as $postId => $postData) : ?>
-                        <p class="footer-section-item footer-new"><a href="<?= file_exists('./blog/index.php') ? "./blog/index.php?blogId={$postId}" : "../blog/index.php?blogId={$postId}"; ?>"><?= $postData['title']; ?></a></p>
+                        <p class="footer-section-item footer-new"><a href="<?= "/blog/index.php?blogId={$postId}"; ?>"><?= $postData['title']; ?></a></p>
                     <?php endforeach; ?>
                 </section>
                 <section class="footer-section">

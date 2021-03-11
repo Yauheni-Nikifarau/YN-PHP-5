@@ -1,11 +1,10 @@
-<?php require_once '../pagesData/header.php'; 
-require_once '../pagesData/data.php';?>
+<?php require_once '../pagesData/header.php';?>
 <section class="content">
     <div class="wrapper">
     
         <h1 class="content-title">blog</h1>
 
-        <?php if (empty($_GET) || !isset($_GET['blogId'])) :
+        <?php if (!isset($_GET['blogId'])) :
 
             foreach ($arBlog as $id => $data) :?>
 
@@ -16,12 +15,19 @@ require_once '../pagesData/data.php';?>
 
             <?php endforeach;
 
-        else:
+        elseif (array_key_exists($_GET['blogId'], $arBlog)):
 
-            $key = $_GET['blogId'];?>
+            $post = $arBlog[$_GET['blogId']];?>
             <div class="blog-new">
-                <h3 class="blog-new-title"><?= $arBlog[$key]['title'];?></h3>
-                <p class="blog-new-text"><?= $arBlog[$key]['text'];?></p>
+                <h3 class="blog-new-title"><?= $post['title'];?></h3>
+                <p class="blog-new-text"><?= $post['text'];?></p>
+            </div>
+
+        <?php else: ?>
+
+            <div class="blog-new">
+                <h3 class="blog-new-title">Страница не найдена</h3>
+                <p class="blog-new-text"><a href="./">Вернуться назад.</a> </p>
             </div>
 
         <?php endif; ?>
